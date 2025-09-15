@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; background: #0b0d12; color: #e7e9ee;}
+a { color: inherit; text-decoration: underline; }
+header { padding: 2rem 0; }
+.container { width: 100%; max-width: 960px; margin: 0 auto; padding: 0 1rem; }
+h1 { font-size: 2rem; margin: 0 0 .25rem; }
+.subtitle { margin: 0 0 1rem; opacity: .8; }
+nav a { margin-right: 1rem; opacity: .9; }
+.card { background: #111623; border: 1px solid #1b2233; padding: 1.25rem; margin: 1rem 0; border-radius: 14px; box-shadow: 0 10px 25px rgba(0,0,0,.25); }
+.project-list { list-style: none; padding: 0; margin: 0; }
+.project-list li { margin: .75rem 0; padding: .5rem 0; border-top: 1px dashed #2a3245; }
+.project-list li:first-child { border-top: 0; }
+code { display: inline-block; background: #0d1320; border: 1px solid #242c3e; padding: .1rem .4rem; border-radius: 8px; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .9em; }
+footer { padding: 2rem 0; opacity: .7; }

@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Revanth Pattela — Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="container">
+    <h1>Revanth Pattela</h1>
+    <p class="subtitle">Aspiring Cloud/DevOps Engineer • Baltimore, MD</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="card">
+      <h2>Hi, I'm Revanth 👋</h2>
+      <p>I’m exploring modern IT by building hands-on projects in Cloud, DevOps, AI/ML, Cybersecurity, and IoT.
+      This site is my sandbox—everything deployed via S3 (and optionally CloudFront) with CI/CD from GitHub.</p>
+      <p class="note">Tip: This very page can be your first deployment!</p>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <ul class="project-list">
+        <li>
+          <h3>Static Site on AWS S3</h3>
+          <p>A minimal portfolio deployed to S3 with GitHub Actions syncing on every push. Optional CloudFront for CDN + HTTPS.</p>
+          <code>Stack: HTML, CSS, GitHub Actions, S3, CloudFront</code>
+        </li>
+        <li>
+          <h3>Containerized Hello-World (Next)</h3>
+          <p>Dockerize a simple app and deploy to AWS App Runner or ECS Fargate.</p>
+          <code>Stack: Docker, GitHub Actions, App Runner/ECS</code>
+        </li>
+      </ul>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills</h2>
+      <p>Cloud (AWS), Git/GitHub, CI/CD basics, Linux CLI, Networking fundamentals</p>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>GitHub: <a href="https://github.com/" target="_blank" rel="noopener">github.com/your-username</a></p>
+      <p>Email: <a href="mailto:you@example.com">you@example.com</a></p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="year"></span> Revanth Pattela</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
