@@ -23,6 +23,8 @@ jobs:
           aws s3 sync . s3://${{ secrets.S3_BUCKET }}             --delete             --exclude ".git/*"             --exclude ".github/*"             --exclude "README.md"             --exclude ".gitignore"
 
       - name: Invalidate CloudFront (optional)
-        if: ${{ secrets.CLOUDFRONT_DIST_ID != '' }}
+        if: env.CLOUDFRONT_DIST_ID != ' '       
+        env:
+          CLOUDFRONT_DIST_ID: ${{ secrets.CLOUDFRONT_DIST_ID }}
         run: |
-          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DIST_ID }} --paths "/*"
+        aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DIST_ID }} --paths "/*"
